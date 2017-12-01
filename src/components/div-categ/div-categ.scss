@@ -1,3 +1,116 @@
-div-categ {
+.dir {
+    height: 40px;
+    width: 100%;
+    display: inline-block;
+    background-color: black;
+    float: left;
+    vertical-align: middle;
+    line-height: 40px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: gray;
+    padding-left: 10px;
+    margin-top: 3px;
+    color: white;
+}
 
+.esq {
+	height: 40px;
+	width: 0%;
+	display: inline-block;
+	background-color: red;
+	float: left;
+	vertical-align: middle;
+	line-height: 40px;
+	visibility: hidden;
+    margin-top: 3px;
+    color: white;
+}
+
+.teste{
+    background-color: yellowgreen !important;
+}
+
+.azul{
+    background-color: blue !important;
+}
+
+.reduce{
+	background-color: black;
+	width: 80%;
+	height: 40px;
+	float: left;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 40px;
+	border-style: solid;
+    border-width: 0.5px;
+    border-color: gray;
+    padding-left: 10px;
+    margin-top: 3px;
+
+	animation-name: reduce;
+	-webkit-animation-name: reduce;	
+
+	animation-duration: 0.1s;	
+	-webkit-animation-duration: 0.1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;	
+
+	visibility: visible !important;	
+}
+
+@keyframes reduce {
+	0% {width: 96%;}
+	25% {width: 92%;}
+	50% {width: 88%;}
+	75% {width: 84%;}
+	100% {width: 80%;}
+}
+
+@-webkit-keyframes reduce {
+	0% {width: 96%;}
+	25% {width: 92%;}
+	50% {width: 88%;}
+	75% {width: 84%;}
+	100% {width: 80%;}
+}
+
+.delete{
+	background-color: red;
+	width: 20%;
+	height: 40px;
+	float: left;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 40px;
+	margin-top: 3px;
+
+	animation-name: delete;
+	-webkit-animation-name: delete;	
+
+	animation-duration: 0.1s;	
+	-webkit-animation-duration: 0.1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes delete {
+	0% {width: 4%;}
+	25% {width: 8%;}
+	50% {width: 12%;}
+	75% {width: 16%;}
+	100% {width: 20%;}
+}
+
+@-webkit-keyframes delete {
+	0% {width: 4%;}
+	25% {width: 8%;}
+	50% {width: 12%;}
+	75% {width: 16%;}
+	100% {width: 20%;}
 }

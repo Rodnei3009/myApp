@@ -7,12 +7,24 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>page3</ion-title>
+    <ion-title>Categorias</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding>
+
+  <div-categ></div-categ>
+  <div-categ></div-categ>
+  <div-categ></div-categ>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+
+  <button ion-button block (click)="clique()" color="danger">Home</button>
+  <button ion-button block (click)="pageHome()" color="danger">Clicai</button>
+
+  <a class="button button-small"  ng-click="activeButton = 'a'" ng-class="{ 'active': activeButton === 'a' }" color="yellow">AAA</a>  
+
+  <div class="teste">TESTANDO</div>
 
 </ion-content>

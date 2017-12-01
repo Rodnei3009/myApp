@@ -14,3 +14,49 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+.backcolor {
+    background-color: black;
+}
+
+
+.deleteback{
+	background-color: red;
+	width: 0%;
+	height: 40px;
+	float: left;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 40px;
+	
+	margin-top: 3px;
+
+	animation-name: deleteback;
+	-webkit-animation-name: deleteback;	
+
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;
+
+	visibility: hidden;		
+
+}
+
+@keyframes deleteback {
+	0% {width: 16%;}
+	25% {width: 12%;}
+	50% {width: 8%;}
+	75% {width: 4%;}
+	100% {width: 0%;}
+}
+
+@-webkit-keyframes deleteback {
+	0% {width: 16%;}
+	25% {width: 12%;}
+	50% {width: 8%;}
+	75% {width: 4%;}
+	100% {width: 0%;}
+}
