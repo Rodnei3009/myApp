@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { Page3Page } from './../page3/page3';
+import { CategoriaPage } from './../categoria/categoria';
 
 @Component({
   selector: 'page-home',
@@ -12,8 +12,8 @@ export class HomePage {
 
   }
 
-  page3(): void {
-    this.navCtrl.setRoot(Page3Page);
+  categoria(): void {
+    this.navCtrl.setRoot(CategoriaPage);
   }
 
 }

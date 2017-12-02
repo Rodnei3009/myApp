@@ -21,7 +21,7 @@ webpackEmptyAsyncContext.id = 111;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"../pages/page3/page3.module": [
+	"../pages/categoria/categoria.module": [
 		274,
 		0
 	]
@@ -87,7 +87,7 @@ var ListPage = (function () {
     };
     ListPage = ListPage_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-list',template:/*ion-inline-start:"C:\Users\rodnei.brassoroto\Documents\GitHub\ionic\myApp\src\pages\list\list.html"*/`<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="body">\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-start></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-end>\n        {{item.note}}\n      </div>\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n  <div class="box">Teste</div>\n</ion-content>\n`/*ion-inline-end:"C:\Users\rodnei.brassoroto\Documents\GitHub\ionic\myApp\src\pages\list\list.html"*/
+            selector: 'page-list',template:/*ion-inline-start:"C:\Users\rodnei.brassoroto\Documents\GitHub\ionic\myApp\src\pages\list\list.html"*/`<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="body">\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-start></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-end>\n        {{item.note}}\n      </div>\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n`/*ion-inline-end:"C:\Users\rodnei.brassoroto\Documents\GitHub\ionic\myApp\src\pages\list\list.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], ListPage);
@@ -125,7 +125,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(265);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_list_list__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_page3_page3__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_categoria_categoria__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__ = __webpack_require__(195);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -153,14 +153,14 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_5__pages_home_home__["a" /* HomePage */],
                 __WEBPACK_IMPORTED_MODULE_6__pages_list_list__["a" /* ListPage */],
-                __WEBPACK_IMPORTED_MODULE_7__pages_page3_page3__["a" /* Page3Page */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_categoria_categoria__["a" /* CategoriaPage */],
                 __WEBPACK_IMPORTED_MODULE_3__components_div_categ_div_categ__["a" /* DivCategComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/page3/page3.module#Page3PageModule', name: 'Page3Page', segment: 'page3', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/categoria/categoria.module#CategoriaPageModule', name: 'CategoriaPage', segment: 'categoria', priority: 'low', defaultHistory: [] }
                     ]
                 }),
             ],
@@ -169,7 +169,7 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_5__pages_home_home__["a" /* HomePage */],
                 __WEBPACK_IMPORTED_MODULE_6__pages_list_list__["a" /* ListPage */],
-                __WEBPACK_IMPORTED_MODULE_7__pages_page3_page3__["a" /* Page3Page */]
+                __WEBPACK_IMPORTED_MODULE_7__pages_categoria_categoria__["a" /* CategoriaPage */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__["a" /* StatusBar */],
@@ -248,7 +248,7 @@ var DivCategComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_list_list__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_page3_page3__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_categoria_categoria__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -276,7 +276,7 @@ var MyApp = (function () {
         this.pages = [
             { title: 'Home', component: __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */] },
             { title: 'List', component: __WEBPACK_IMPORTED_MODULE_5__pages_list_list__["a" /* ListPage */] },
-            { title: 'Pagina 3', component: __WEBPACK_IMPORTED_MODULE_6__pages_page3_page3__["a" /* Page3Page */] }
+            { title: 'Categoria', component: __WEBPACK_IMPORTED_MODULE_6__pages_categoria_categoria__["a" /* CategoriaPage */] }
         ];
     }
     MyApp.prototype.initializeApp = function () {
@@ -313,7 +313,7 @@ var MyApp = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Page3Page; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CategoriaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(78);
@@ -330,39 +330,35 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the Page3Page page.
+ * Generated class for the CategoriaPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var Page3Page = (function () {
-    function Page3Page(navCtrl, navParams) {
+var CategoriaPage = (function () {
+    function CategoriaPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.className = 'teste';
     }
-    Page3Page.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad Page3Page');
+    CategoriaPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad CategoriaPage');
     };
-    Page3Page.prototype.pageHome = function () {
+    CategoriaPage.prototype.pageHome = function () {
         this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */]);
     };
-    Page3Page.prototype.clique = function () {
+    CategoriaPage.prototype.clique = function () {
         alert("clicou");
     };
-    Page3Page.prototype.changeClass = function () {
-        this.className = 'teste';
-    };
-    Page3Page = __decorate([
+    CategoriaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-page3',template:/*ion-inline-start:"C:\Users\rodnei.brassoroto\Documents\GitHub\ionic\myApp\src\pages\page3\page3.html"*/`<!--\n  Generated template for the Page3Page page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Categorias</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n  <div-categ></div-categ>\n  <div-categ></div-categ>\n  <div-categ></div-categ>\n  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>\n  \n\n  <button ion-button block (click)="clique()" color="danger">Home</button>\n  <button ion-button block (click)="pageHome()" color="danger">Clicai</button>\n\n  <a class="button button-small"  ng-click="activeButton = \'a\'" ng-class="{ \'active\': activeButton === \'a\' }" color="yellow">AAA</a>  \n\n  <div class="teste">TESTANDO</div>\n\n</ion-content>`/*ion-inline-end:"C:\Users\rodnei.brassoroto\Documents\GitHub\ionic\myApp\src\pages\page3\page3.html"*/,
+            selector: 'page-categoria',template:/*ion-inline-start:"C:\Users\rodnei.brassoroto\Documents\GitHub\ionic\myApp\src\pages\categoria\categoria.html"*/`<!--\n  Generated template for the Page3Page page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n    \n<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Categorias</ion-title>\n  </ion-navbar>\n</ion-header>\n\n  \n<ion-content padding>\n\n  <div-categ></div-categ>\n  <div-categ></div-categ>\n  <div-categ></div-categ>\n  \n  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>\n  \n\n  <button ion-button block (click)="clique()" color="danger">Home</button>\n  <button ion-button block (click)="pageHome()" color="danger">Clicai</button>\n\n  <a class="button button-small" block ng-click="activeButton = \'a\'" ng-class="{ \'active\': activeButton === \'a\' }" color="yellow">AAA</a>  \n\n  <div class="teste">TESTANDO</div>\n\n</ion-content>`/*ion-inline-end:"C:\Users\rodnei.brassoroto\Documents\GitHub\ionic\myApp\src\pages\categoria\categoria.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-    ], Page3Page);
-    return Page3Page;
+    ], CategoriaPage);
+    return CategoriaPage;
 }());
 
-//# sourceMappingURL=page3.js.map
+//# sourceMappingURL=categoria.js.map
 
 /***/ }),
 
@@ -373,7 +369,7 @@ var Page3Page = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__page3_page3__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__categoria_categoria__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -390,12 +386,12 @@ var HomePage = (function () {
     function HomePage(navCtrl) {
         this.navCtrl = navCtrl;
     }
-    HomePage.prototype.page3 = function () {
-        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__page3_page3__["a" /* Page3Page */]);
+    HomePage.prototype.categoria = function () {
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__categoria_categoria__["a" /* CategoriaPage */]);
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\rodnei.brassoroto\Documents\GitHub\ionic\myApp\src\pages\home\home.html"*/`<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h3>Ionic Menu Starter</h3>\n\n  <p>\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.\n  </p>\n\n  <button ion-button block (click)="page3()" color="danger">Page3</button>\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>`/*ion-inline-end:"C:\Users\rodnei.brassoroto\Documents\GitHub\ionic\myApp\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\rodnei.brassoroto\Documents\GitHub\ionic\myApp\src\pages\home\home.html"*/`<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content text-center padding>\n  \n  <br><br><br><br><br>\n  <h6 class="animated fadeInLeft">Bem-vindo! :-)</h6>\n  \n  <div>\n    <img class=" =imagem animated fadeInRight" src="../assets/imgs/cart3.png" style=" width: 200px; vertical-align: middle;">\n  </div>\n\n  <h6 class="animated fadeInLeft">Sua última visita: 17/10/2017</h6>\n\n</ion-content>`/*ion-inline-end:"C:\Users\rodnei.brassoroto\Documents\GitHub\ionic\myApp\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
     ], HomePage);

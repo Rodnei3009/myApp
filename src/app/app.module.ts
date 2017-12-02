@@ -6,7 +6,7 @@ import { DivCategComponent } from './../components/div-categ/div-categ';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-import { Page3Page } from './../pages/page3/page3';
+import { CategoriaPage } from './../pages/categoria/categoria';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -16,7 +16,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
-    Page3Page,
+    CategoriaPage,
     DivCategComponent
   ],
   imports: [
@@ -28,7 +28,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
-    Page3Page
+    CategoriaPage
   ],
   providers: [
     StatusBar,
